@@ -14,3 +14,12 @@ classDiagram
   Book --> Page
   Book ..> BookService
 ```
+
+```mermaid
+sequenceDiagram
+  participant Client
+  participant Server
+  Client ->> Server : get api/users/:id
+  Server ->> Client : response UserData
+  
+```
